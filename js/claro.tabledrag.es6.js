@@ -81,9 +81,7 @@
 
       Object.keys(settings.tableDrag || {}).forEach((base) => {
         initTableDrag(
-          $(context)
-            .find(`#${base}`)
-            .once('tabledrag'),
+          $(`#${base}`, context).once('tabledrag'),
           base,
         );
       });

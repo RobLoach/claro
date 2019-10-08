@@ -105,8 +105,7 @@
           handleFragmentLinkClickOrHashChange,
         );
 
-      $(context)
-        .find('[data-vertical-tabs-panes]')
+      $('[data-vertical-tabs-panes]', context)
         .once('vertical-tabs')
         .each(function initializeVerticalTabs() {
           const $this = $(this).addClass('vertical-tabs__items--processed');
