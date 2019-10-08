@@ -6,8 +6,7 @@
 (($, Drupal) => {
   Drupal.behaviors.claroAutoCompete = {
     attach(context) {
-      $(context)
-        .find('input.form-autocomplete')
+      $('input.form-autocomplete', context)
         .once('claroAutoComplete')
         .each((index, value) => {
           const $input = $(value);

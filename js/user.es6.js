@@ -18,8 +18,7 @@
    */
   Drupal.behaviors.password = {
     attach(context, settings) {
-      const $passwordInput = $(context)
-        .find('input.js-password-field')
+      const $passwordInput = $('input.js-password-field', context)
         .once('password');
 
       if ($passwordInput.length) {
